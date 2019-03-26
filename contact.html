@@ -1,0 +1,81 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Article">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+
+    <!-- title, description and fav icons -->
+    <title>Eating HaBits</title>
+    <meta name="description" content="Eating HaBits." />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+    <!-- Open Graph data for Facebook. twitter, whatsapp, medium etc -->
+    <meta property="og:title" content="Eating HaBits" />
+    <meta property="og:description" content="Eating HaBits" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://eatinghabits.io/" />
+    <meta property="og:image" content="http://eatinghabits.io/shareimages/share3-1200x628.png" />
+    <meta property="og:site_name" content="eatinghabits.io" />
+
+    <!-- links to fontas and style sheets -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+
+    <link href="css/zstyle.css" rel="stylesheet" type="text/css">
+    <link href="css/dropDown.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<section style="background:white;border-bottom: 2px solid red;">
+  <div class="container">      
+    <div class="service_wrapper">
+      <div class="row"> 
+		<div class="colfull" style="text-align:center">
+	  </div>
+	</div>
+  </div>
+  </div>
+</section>
+
+    <section style="background:white;">
+        <div class="container" style="text-align:center;margin:0 auto;padding:0;background:white;">
+            <div style="width:100%;text-align:center;">
+            	</br></br>
+                <form id="myform" onsubmit="emailjs.sendForm('default_service', 'template_UBkFPJQA', this); return false;" method="post">
+                    <label style="color:blue">Full Name</label>
+                    <input type="text" style="width:300px;height:40px" name="from_name" />
+                    </br>
+                    </br>
+                    <label style="color:blue">Email ID</label>
+                    <input type="text" style="width:300px;height:40px" name="reply_to" />
+                    </br>
+                    </br>
+                    <!--
+  				<label>to_name</label>
+  				<input type="text" name="to_name" />
+  				-->
+                    <label>Message</label>
+                    </br>
+                    </br>
+                    <input type="text" style="width:400px;height:420px" name="message_html" />
+                    <br>
+                    <br>
+                    <button style="color:blue;font-size:20px;">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_NwCrRHjaO0LBS8p3mOydX");
+        })();
+    </script>
+
+</body>
+</html>
